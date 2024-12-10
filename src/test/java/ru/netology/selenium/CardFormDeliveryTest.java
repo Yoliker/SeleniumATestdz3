@@ -1,6 +1,7 @@
 package ru.netology.selenium;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.checkerframework.checker.units.qual.A;
 import org.junit.jupiter.api.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -322,7 +323,11 @@ public class CardFormDeliveryTest {
         driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("+78920000000");
         driver.findElement(By.cssSelector("button")).click();
 
-        assertTrue(driver.findElement(By.cssSelector(".input_invalid[data-test-id=agreement]")).isDisplayed());
+        WebElement answer = driver.findElement(By.cssSelector(".input_invalid[data-test-id=agreement]"));
+        String actualAnswer = answer.getText().trim();
+
+        Assertions.assertEquals("Поле обязательно для заполнения", actualAnswer);
+        assertTrue(answer.isDisplayed());
 
     }
 
