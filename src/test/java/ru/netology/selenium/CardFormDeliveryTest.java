@@ -1,7 +1,7 @@
 package ru.netology.selenium;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.checkerframework.checker.units.qual.A;
+
 import org.junit.jupiter.api.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -9,9 +9,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
-import java.util.List;
-
-import static org.junit.jupiter.api.Assertions.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
@@ -121,7 +118,7 @@ public class CardFormDeliveryTest {
         driver.findElement(By.className("checkbox")).click();
         driver.findElement(By.className("button")).click();
 
-        WebElement answer = driver.findElement(By.cssSelector(".input_invalid[data-test-id='name'] span.input__inner span.input__sub"));
+        WebElement answer = driver.findElement(By.cssSelector(".input_invalid[data-test-id='name'] span.input__sub"));
         String actualAnswer = answer.getText().trim();
 
         assertEquals("Имя и Фамилия указаные неверно. Допустимы только русские буквы, пробелы и дефисы.", actualAnswer);
@@ -135,7 +132,7 @@ public class CardFormDeliveryTest {
         driver.findElement(By.className("checkbox")).click();
         driver.findElement(By.className("button")).click();
 
-        WebElement answer = driver.findElement(By.cssSelector(".input_invalid[data-test-id='name'] span.input__inner span.input__sub"));
+        WebElement answer = driver.findElement(By.cssSelector(".input_invalid[data-test-id='name'] span.input__sub"));
         String actualAnswer = answer.getText().trim();
 
         assertEquals("Имя и Фамилия указаные неверно. Допустимы только русские буквы, пробелы и дефисы.", actualAnswer);
@@ -150,7 +147,7 @@ public class CardFormDeliveryTest {
         driver.findElement(By.className("checkbox")).click();
         driver.findElement(By.className("button")).click();
 
-        WebElement answer = driver.findElement(By.cssSelector(".input_invalid[data-test-id='name'] span.input__inner span.input__sub"));
+        WebElement answer = driver.findElement(By.cssSelector(".input_invalid[data-test-id='name'] span.input__sub"));
         String actualAnswer = answer.getText().trim();
 
         assertEquals("Имя и Фамилия указаные неверно. Допустимы только русские буквы, пробелы и дефисы.", actualAnswer);
@@ -166,7 +163,7 @@ public class CardFormDeliveryTest {
         driver.findElement(By.className("checkbox")).click();
         driver.findElement(By.className("button")).click();
 
-        WebElement answer = driver.findElement(By.cssSelector(".input_invalid[data-test-id='name'] span.input__inner span.input__sub"));
+        WebElement answer = driver.findElement(By.cssSelector(".input_invalid[data-test-id='name'] span.input__sub"));
         String actualAnswer = answer.getText().trim();
 
         assertEquals("Имя и Фамилия указаные неверно. Допустимы только русские буквы, пробелы и дефисы.", actualAnswer);
@@ -182,7 +179,7 @@ public class CardFormDeliveryTest {
         driver.findElement(By.className("checkbox")).click();
         driver.findElement(By.className("button")).click();
 
-        WebElement answer = driver.findElement(By.cssSelector(".input_invalid[data-test-id='name'] span.input__inner span.input__sub"));
+        WebElement answer = driver.findElement(By.cssSelector(".input_invalid[data-test-id='name'] span.input__sub"));
         String actualAnswer = answer.getText().trim();
 
         assertEquals("Имя и Фамилия указаные неверно. Допустимы только русские буквы, пробелы и дефисы.", actualAnswer);
@@ -198,7 +195,7 @@ public class CardFormDeliveryTest {
         driver.findElement(By.className("checkbox")).click();
         driver.findElement(By.className("button")).click();
 
-        WebElement answer = driver.findElement(By.cssSelector(".input_invalid[data-test-id='name'] span.input__inner span.input__sub"));
+        WebElement answer = driver.findElement(By.cssSelector(".input_invalid[data-test-id='name'] span.input__sub"));
         String actualAnswer = answer.getText().trim();
 
         assertEquals("Имя и Фамилия указаные неверно. Допустимы только русские буквы, пробелы и дефисы.", actualAnswer);
@@ -214,7 +211,7 @@ public class CardFormDeliveryTest {
         driver.findElement(By.className("checkbox")).click();
         driver.findElement(By.className("button")).click();
 
-        WebElement answer = driver.findElement(By.cssSelector(".input_invalid[data-test-id='name'] span.input__inner span.input__sub"));
+        WebElement answer = driver.findElement(By.cssSelector(".input_invalid[data-test-id='name'] span.input__sub"));
         String actualAnswer = answer.getText().trim();
 
         assertEquals("Имя и Фамилия указаные неверно. Допустимы только русские буквы, пробелы и дефисы.", actualAnswer);
@@ -229,7 +226,7 @@ public class CardFormDeliveryTest {
         driver.findElement(By.className("checkbox")).click();
         driver.findElement(By.className("button")).click();
 
-        WebElement answer = driver.findElement(By.cssSelector(".input_invalid[data-test-id='name'] span.input__inner span.input__sub"));
+        WebElement answer = driver.findElement(By.cssSelector(".input_invalid[data-test-id='name'] span.input__sub"));
         String actualAnswer = answer.getText().trim();
 
         assertEquals("Поле обязательно для заполнения", actualAnswer);
@@ -245,7 +242,7 @@ public class CardFormDeliveryTest {
         driver.findElement(By.cssSelector("[data-test-id=agreement]")).click();
         driver.findElement(By.cssSelector("button")).click();
 
-        WebElement answer = driver.findElement(By.cssSelector(".input_invalid[data-test-id=phone] span.input__inner span.input__sub"));
+        WebElement answer = driver.findElement(By.cssSelector(".input_invalid[data-test-id=phone] span.input__sub"));
         String actualAnswer = answer.getText().trim();
 
         assertEquals("Телефон указан неверно. Должно быть 11 цифр, например, +79012345678.", actualAnswer);
@@ -261,7 +258,7 @@ public class CardFormDeliveryTest {
         driver.findElement(By.className("checkbox")).click();
         driver.findElement(By.className("button")).click();
 
-        WebElement answer = driver.findElement(By.cssSelector(".input_invalid[data-test-id=phone] span.input__inner span.input__sub"));
+        WebElement answer = driver.findElement(By.cssSelector(".input_invalid[data-test-id=phone] span.input__sub"));
         String actualAnswer = answer.getText().trim();
 
         assertEquals("Телефон указан неверно. Должно быть 11 цифр, например, +79012345678.", actualAnswer);
@@ -277,7 +274,7 @@ public class CardFormDeliveryTest {
         driver.findElement(By.cssSelector("[data-test-id=agreement]")).click();
         driver.findElement(By.cssSelector("button")).click();
 
-        WebElement answer = driver.findElement(By.cssSelector(".input_invalid[data-test-id=phone] span.input__inner span.input__sub"));
+        WebElement answer = driver.findElement(By.cssSelector(".input_invalid[data-test-id=phone] span.input__sub"));
         String actualAnswer = answer.getText().trim();
 
         assertEquals("Телефон указан неверно. Должно быть 11 цифр, например, +79012345678.", actualAnswer);
@@ -293,7 +290,7 @@ public class CardFormDeliveryTest {
         driver.findElement(By.cssSelector("[data-test-id=agreement]")).click();
         driver.findElement(By.cssSelector("button")).click();
 
-        WebElement answer = driver.findElement(By.cssSelector(".input_invalid[data-test-id=phone] span.input__inner span.input__sub"));
+        WebElement answer = driver.findElement(By.cssSelector(".input_invalid[data-test-id=phone] span.input__sub"));
         String actualAnswer = answer.getText().trim();
 
         assertEquals("Телефон указан неверно. Должно быть 11 цифр, например, +79012345678.", actualAnswer);
@@ -308,7 +305,7 @@ public class CardFormDeliveryTest {
         driver.findElement(By.cssSelector("[data-test-id=agreement]")).click();
         driver.findElement(By.cssSelector("button")).click();
 
-        WebElement answer = driver.findElement(By.cssSelector(".input_invalid[data-test-id=phone] span.input__inner span.input__sub"));
+        WebElement answer = driver.findElement(By.cssSelector(".input_invalid[data-test-id=phone] span.input__sub"));
         String actualAnswer = answer.getText().trim();
 
         assertEquals("Поле обязательно для заполнения", actualAnswer);
